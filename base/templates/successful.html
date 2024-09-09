@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Age Calculated</title>
+</head>
+<body>
+    <!-- <div class="outer-box"></div>
+        <div class="innerboxsuccess">
+            <header>
+                <h1>Age Calculator</h1>
+                <p>Calculate your age using this simple and free web app.</p>
+            </header>
+            <main>
+                <p>Your age has been calculated and sent to your email address.</p>
+                <p>Thank you for using our Age Calculator web app.</p>
+                <a href="{% url 'home' %}">Go Back</a>
+            </main>
+            <footer>
+                <marquee behavior="" direction=""><p>&copy; 2021 Age Calculator. All rights reserved. Ujjwal Neupane</p></marquee>
+                <marquee behavior="" direction=""><p>This page is made using HTML only.</p></marquee>
+            </footer>
+        </div>
+    </div>    -->
+    <div class="outer-box">
+        <div class="innerbox">
+            <header>
+                <h1>Age Calculator</h1>
+                <p>Calculate your age using this simple and free web app.</p>
+            </header>
+            <main>
+                <p>Your age has been calculated and sent to your email address.</p>
+                <p>Thank you for using our Age Calculator web app.</p>
+                <a href="{% url 'home' %}">Go Back</a>
+            </main>
+            <footer></footer>
+                <marquee behavior="" direction=""><p>&copy; 2021 Age Calculator. All rights reserved. Ujjwal Neupane</p></marquee>
+                <marquee behavior="" direction=""><p>This page is made using HTML and CSS only.</p></marquee>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

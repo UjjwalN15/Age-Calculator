@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Silkscreen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.outer-box{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top right, rgb(0, 255, 4), rgb(62, 0, 217));
+    /* background: linear-gradient(120deg, #c3e3ff, #b300ff); */
+    background-size: 200% 200%;
+    animation: backgroundAnimation 10s ease infinite;
+}
+
+
+.innerbox{
+    width: 400px;
+    background-color: ffffff33;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #ffffff;
+    z-index: 2;
+}
+
+.innerbox h1{
+    font-size: 3rem;
+    cursor: pointer;
+    color: hotpink;
+}
+
+.innerbox>p, header>p, marquee{
+    font-size: 1rem;
+    color: rgb(246, 205, 241);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#ageForm>#fname,#lname,#email,#dob,#address {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#ageForm>label{
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    margin-top: 5px;
+}
+/* Keyframes for Background Animation */
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#ageForm>#reset,#submit, a{
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: hotpink;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+}
+#ageForm>#reset:hover ,#submit:hover, a:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+main>p{
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    cursor: pointer;
+}
+ ol>li{
+    margin-left: 50px;
+    color: white;
+ }

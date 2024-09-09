@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Age Calculated</title>
+</head>
+<body>
+    <div class="outer-box">
+        <div class="innerbox">
+            <header>
+                <h1>Error</h1>
+                <p>Something went wrong</p>
+            </header>
+            <main>
+                <p>You got an error. You may have done something wrong.Please check your input and try again. Please:
+                    <ol>
+                        <li>Don't leave any input field blank</li>
+                        <li>Enter a valid email address.</li>
+                        <li>Enter your valid birth date.</li>
+                    </ol>
+                </p>
+                <p>Thank you for using our Age Calculator web app.</p>
+                <a href="{% url 'home' %}">Go Back</a>
+            </main>
+            <footer></footer>
+                <marquee behavior="" direction=""><p>&copy; 2021 Age Calculator. All rights reserved. Ujjwal Neupane</p></marquee>
+                <marquee behavior="" direction=""><p>This page is made using HTML and CSS only.</p></marquee>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
